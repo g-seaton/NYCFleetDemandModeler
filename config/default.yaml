@@ -1,0 +1,20 @@
+project:
+  seed: 42
+  interval_minutes: 30
+
+forecast:
+  test_fraction: 0.20
+  model: xgboost
+  n_estimators: 250
+  max_depth: 5
+  learning_rate: 0.05
+
+optimization:
+  solver: auto
+  unmet_penalty: 75.0
+  reposition_cost_per_minute: 0.35
+  max_reposition_minutes: 35.0
+
+simulation:
+  initial_fleet_size: 450
+  max_intervals: 144

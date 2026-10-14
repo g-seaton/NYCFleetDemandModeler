@@ -1,0 +1,40 @@
+{
+  "forecast": {
+    "mae_model": 2.638441432478293,
+    "rmse_model": 3.536260299813417,
+    "mae_seasonal_naive": 3.6269654088050314,
+    "rmse_seasonal_naive": 4.945496967097678
+  },
+  "policies": [
+    {
+      "policy": "optimized",
+      "total_demand": 16318.0,
+      "total_served": 14952.0,
+      "total_unserved": 1366.0,
+      "service_rate": 0.9162887608775585,
+      "repositioned_vehicles": 1154.0,
+      "reposition_vehicle_minutes": 12753.162064891814,
+      "mean_interval_service_rate": 0.9252575649638162
+    },
+    {
+      "policy": "greedy",
+      "total_demand": 16318.0,
+      "total_served": 14950.0,
+      "total_unserved": 1368.0,
+      "service_rate": 0.9161661968378477,
+      "repositioned_vehicles": 1178.0,
+      "reposition_vehicle_minutes": 13277.450179370782,
+      "mean_interval_service_rate": 0.9253288612957016
+    },
+    {
+      "policy": "none",
+      "total_demand": 16318.0,
+      "total_served": 13649.0,
+      "total_unserved": 2669.0,
+      "service_rate": 0.8364382890060056,
+      "repositioned_vehicles": 0.0,
+      "reposition_vehicle_minutes": 0.0,
+      "mean_interval_service_rate": 0.8589486747757842
+    }
+  ]
+}

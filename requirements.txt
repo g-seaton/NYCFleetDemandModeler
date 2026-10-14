@@ -1,0 +1,3 @@
+-e .[dev,app,data,tracking]
+# Install Gurobi separately if you have a license:
+# pip install gurobipy

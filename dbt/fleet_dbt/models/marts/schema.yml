@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: fct_zone_demand_30m
+    description: Demand by taxi zone and 30-minute interval.
+    columns:
+      - name: window_start
+        tests: [not_null]
+      - name: zone_id
+        tests: [not_null]
+      - name: demand
+        tests: [not_null]

@@ -1,0 +1,13 @@
+version: 2
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: trips
+        columns:
+          - name: pickup_datetime
+            tests: [not_null]
+          - name: PULocationID
+            tests: [not_null]
+          - name: DOLocationID
+            tests: [not_null]

@@ -1,0 +1,12 @@
+fleet_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: localhost
+      user: fleet
+      password: fleet
+      port: 5432
+      dbname: fleet
+      schema: analytics
+      threads: 4
