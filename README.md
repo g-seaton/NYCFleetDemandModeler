@@ -262,12 +262,6 @@ Response:
 
 **Why a time split instead of random train/test?** Demand forecasting is temporal. Random splits leak future patterns into training and overstate performance.
 
-## Suggested resume bullet after running the real-data experiment
-
-> Built an end-to-end urban fleet decision platform across NYC trip data, combining SQL/dbt pipelines, gradient-boosted spatiotemporal demand forecasting, and rolling-horizon mixed-integer network-flow optimization to reduce simulated unmet demand and empty repositioning cost versus heuristic dispatch baselines.
-
-Replace the outcome clause with the measured values from `artifacts/metrics.json` after your final experiment.
-
 ## Local development
 
 ```bash
