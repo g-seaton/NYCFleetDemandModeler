@@ -64,23 +64,23 @@ For each decision interval, let:
 
 The model minimizes
 
-\[
+$$
 \min \; \lambda_u \sum_j u_j + \lambda_r \sum_{i \ne j} c_{ij}x_{ij}
-\]
+$$
 
 subject to
 
-\[
-\sum_{j \ne i} x_{ij} \le v_i \quad \forall i
-\]
+$$
+\sum_{j \ne i} x_{ij} \le v_i \qquad \forall i
+$$
 
-\[
-v_j - \sum_{k \ne j}x_{jk} + \sum_{i \ne j}x_{ij} + u_j \ge d_j \quad \forall j
-\]
+$$
+v_j - \sum_{k \ne j} x_{jk} + \sum_{i \ne j} x_{ij} + u_j \ge d_j \qquad \forall j
+$$
 
-\[
-x_{ij} \in \mathbb{Z}_{\ge 0}, \qquad u_j \ge 0.
-\]
+$$
+x_{ij} \in \mathbb{Z}_{\ge 0}, \qquad u_j \ge 0
+$$
 
 This is a capacitated network-flow style mixed-integer model. The primary implementation uses **Gurobi**; a SciPy MILP fallback keeps the demo fully runnable.
 
